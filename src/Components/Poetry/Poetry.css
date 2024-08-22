@@ -9,7 +9,7 @@
     background-attachment: fixed;
   }
   
-  h1 {
+  .p {
     font-size: 3em;
     font-weight: bold;
     color: #6A5ACD;
@@ -18,31 +18,32 @@
     margin-bottom: 30px;
   }
   
-  .book-list {
+  .p-book-list {
     list-style-type: none;
     padding-top: 20px;
   }
   
-  .book-item {
+  .p-book-item {
     display: flex;
     align-items: flex-start; 
     margin-bottom: 20px;
-    background: rgba(5, 5, 5, 0.5);
+    background: rgba(5, 5, 5, 0.7);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(8, 8, 8, 0.918);
     padding: 50px 0px 50px 0px;
     overflow: hidden;
   }
   
-  .book-cover {
+  .p-book-cover {
     width: 300px;
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 20px;
+    margin-left: 20px;
   }
   
-  .book-details {
+  .p-book-details {
     flex: 1; 
     display: flex;
     flex-direction: column;
@@ -51,36 +52,36 @@
     text-align: left;
   }
   
-  .book-details h2 {
+  .p-book-details h2 {
     margin-left: 0; 
     font-size: 1.8em; 
     color: white;
     white-space: nowrap;
   }
   
-  .book-details p {
+  .p-book-details p {
     margin: 5px 0;
     font-size: 1.2em; 
     color: white;
   }
   
-  .book-details .author {
+  .p-book-details .author {
     margin-top: 10px; 
   }
   
-  .book-details p.teaser {
-    font-size: 0.85em; 
+  .p-book-details p.p-teaser {
+    font-size: 1em; 
     width: 100%; 
     max-width: 1000px; 
     margin: 10px 0; 
     color: bisque;
   }
   
-  .download-button {
+  .p-download-button {
     margin-top: 10px; 
   }
   
-  .download-button button {
+  .p-download-button button {
     background-color: #6A5ACD; 
     border: none; 
     color: white; 
@@ -93,5 +94,19 @@
     cursor: pointer; 
     border-radius: 4px; 
     transition: background-color 0.3s, transform 0.2s; 
+  }
+   
+  .p-download-button button:hover {
+    background-color: #3026be; 
+    transform: scale(1.05); 
+  }
+  
+  .p-download-button button:active {
+    background-color: #423ab6; 
+  }
+  
+  .p-book-details .blurb-label {
+    color: white;
+    font-weight: bold;
   }
   

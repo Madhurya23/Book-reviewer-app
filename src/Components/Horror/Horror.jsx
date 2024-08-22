@@ -47,18 +47,18 @@ const books = [
 const Horror = () => {
   return (
     <div className="horror-page">
-      <h1>HORROR --- Top Five Books</h1>
+      <h1 className='hor'>HORROR --- Top Five Books</h1>
       
-      <ul className="book-list">
+      <ul className="hor-book-list">
         {books.map((book, index) => (
-          <li key={index} className="book-item">
-            <img src={book.cover} alt={book.title} className="book-cover"/>
-            <div className="book-details">
+          <li key={index} className="hor-book-item">
+            <img src={book.cover} alt={book.title} className="hor-book-cover"/>
+            <div className="hor-book-details">
               <h2>Title: {book.title}</h2>
               <p>Author: {book.author}</p>
-              <p className='teaser'><span className="blurb-label">Blurb: </span> {book.teaser}</p>
+              <p className='hor-teaser'><span className="hor-blurb-label">Blurb: </span> {book.teaser}</p>
               <p>Rating: {book.rating}</p>
-              <a href={book.downloadLink} className="download-button"><button>Download</button></a>
+              <a href={book.downloadLink} className="hor-download-button"><button>Download</button></a>
             </div>
           </li>
         ))}

@@ -47,18 +47,18 @@ const books = [
 const GreekMythology = () => {
   return (
     <div className="greekmyth-page">
-      <h1>GREEK MYTHOLOGY --- Top Five Books</h1>
+      <h1 className='gm'>GREEK MYTHOLOGY --- Top Five Books</h1>
       
-      <ul className="book-list">
+      <ul className="gm-book-list">
         {books.map((book, index) => (
-          <li key={index} className="book-item">
-            <img src={book.cover} alt={book.title} className="book-cover"/>
-            <div className="book-details">
+          <li key={index} className="gm-book-item">
+            <img src={book.cover} alt={book.title} className="gm-book-cover"/>
+            <div className="gm-book-details">
               <h2>Title: {book.title}</h2>
               <p>Author: {book.author}</p>
-              <p className='teaser'><span className="blurb-label">Blurb: </span> {book.teaser}</p>
+              <p className='gm-teaser'><span className="gm-blurb-label">Blurb: </span> {book.teaser}</p>
               <p>Rating: {book.rating}</p>
-              <a href={book.downloadLink} className="download-button"><button>Download</button></a>
+              <a href={book.downloadLink} className="gm-download-button"><button>Download</button></a>
             </div>
           </li>
         ))}

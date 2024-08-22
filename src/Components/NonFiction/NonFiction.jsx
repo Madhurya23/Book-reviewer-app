@@ -47,18 +47,18 @@ const books = [
 const NonFiction = () => {
   return (
     <div className="nonfiction-page">
-      <h1>NON-FICTION --- Top Five Books</h1>
+      <h1 className='nf'>NON-FICTION --- Top Five Books</h1>
       
-      <ul className="book-list">
+      <ul className="nf-book-list">
         {books.map((book, index) => (
-          <li key={index} className="book-item">
-            <img src={book.cover} alt={book.title} className="book-cover"/>
-            <div className="book-details">
+          <li key={index} className="nf-book-item">
+            <img src={book.cover} alt={book.title} className="nf-book-cover"/>
+            <div className="nf-book-details">
               <h2>Title: {book.title}</h2>
               <p>Author: {book.author}</p>
-              <p className='teaser'><span className="blurb-label">Blurb: </span> {book.teaser}</p>
+              <p className='nf-teaser'><span className="nf-blurb-label">Blurb: </span> {book.teaser}</p>
               <p>Rating: {book.rating}</p>
-              <a href={book.downloadLink} className="download-button"><button>Download</button></a>
+              <a href={book.downloadLink} className="nf-download-button"><button>Download</button></a>
             </div>
           </li>
         ))}

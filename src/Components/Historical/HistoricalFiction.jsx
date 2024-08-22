@@ -47,18 +47,18 @@ const books = [
 const HistoricalFiction = () => {
   return (
     <div className="historical-fiction-page">
-      <h1>HISTORICAL FICTION --- Top Five Books</h1>
+      <h1 className='hf'>HISTORICAL FICTION --- Top Five Books</h1>
       
-      <ul className="book-list">
+      <ul className="hf-book-list">
         {books.map((book, index) => (
-          <li key={index} className="book-item">
-            <img src={book.cover} alt={book.title} className="book-cover"/>
-            <div className="book-details">
+          <li key={index} className="hf-book-item">
+            <img src={book.cover} alt={book.title} className="hf-book-cover"/>
+            <div className="hf-book-details">
               <h2>Title: {book.title}</h2>
               <p>Author: {book.author}</p>
-              <p className='teaser'><span className="blurb-label">Blurb: </span> {book.teaser}</p>
+              <p className='hf-teaser'><span className="hf-blurb-label">Blurb: </span> {book.teaser}</p>
               <p>Rating: {book.rating}</p>
-              <a href={book.downloadLink} className="download-button"><button>Download</button></a>
+              <a href={book.downloadLink} className="hf-download-button"><button>Download</button></a>
             </div>
           </li>
         ))}

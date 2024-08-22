@@ -9,7 +9,7 @@
     background-attachment: fixed;
   }
   
-  h1 {
+  .adv {
     font-size: 3em;
     font-weight: bold;
     color: #eee8e1;
@@ -18,12 +18,12 @@
     margin-bottom: 30px;
   }
   
-  .book-list {
+  .adv-book-list {
     list-style-type: none;
     padding-top: 20px;
   }
   
-  .book-item {
+  .adv-book-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
@@ -35,7 +35,7 @@
     width: 100%;
   }
   
-  .book-cover {
+  .adv-book-cover {
     width: 300px;
     height: 440px;
     object-fit: cover;
@@ -44,7 +44,7 @@
     margin-left: 30px;
   }
   
-  .book-details {
+  .adv-book-details {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -54,36 +54,36 @@
     width: 100%;
   }
   
-  .book-details h2 {
+  .adv-book-details h2 {
     margin-left: 0;
     font-size: 1.8em;
     color: white;
     white-space: nowrap;
   }
   
-  .book-details p {
+  .adv-book-details p {
     margin: 5px 0;
     font-size: 1.2em;
     color: white;
   }
   
-  .book-details .author {
+  .adv-book-details .author {
     margin-top: 10px;
   }
   
-  .book-details p.teaser {
+  .adv-book-details p.adv-teaser {
     font-size: 1em;
     width: 100%;
     max-width: 1200px;
     margin: 10px 0;
-    color: bisque;
+    color: rgb(252, 224, 68);
   }
   
-  .download-button {
+  .adv-download-button {
     margin-top: 10px;
   }
   
-  .download-button button {
+  .adv-download-button button {
     background-color: #155505;
     border: none;
     color: white;
@@ -98,16 +98,16 @@
     transition: background-color 0.3s, transform 0.2s;
   }
   
-  .download-button button:hover {
+  .adv-download-button button:hover {
     background-color: #10a729;
     transform: scale(1.05);
   }
   
-  .download-button button:active {
+  .adv-download-button button:active {
     background-color: #1caa1c;
   }
   
-  .book-details .blurb-label {
+  .adv-book-details .blurb-label {
     color: white;
     font-weight: bold;
   }

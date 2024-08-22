@@ -50,18 +50,18 @@ const books = [
 const Romance = () => {
   return (
     <div className="romance-page">
-      <h1>ROMANCE --- Top Five Books</h1>
+      <h1 className='ro'>ROMANCE --- Top Five Books</h1>
       
-      <ul className="book-list">
+      <ul className="ro-book-list">
         {books.map((book, index) => (
-          <li key={index} className="book-item">
-            <img src={book.cover} alt={book.title} className="book-cover"/>
-            <div className="book-details">
+          <li key={index} className="ro-book-item">
+            <img src={book.cover} alt={book.title} className="ro-book-cover"/>
+            <div className="ro-book-details">
               <h2>Title: {book.title}</h2>
               <p>Author: {book.author}</p>
-              <p className='teaser'><span className="blurb-label">Blurb: </span> {book.teaser}</p>
+              <p className='ro-teaser'><span className="ro-blurb-label">Blurb: </span> {book.teaser}</p>
               <p>Rating: {book.rating}</p>
-              <a href={book.downloadLink} className="download-button"><button>Download</button></a>
+              <a href={book.downloadLink} className="ro-download-button"><button>Download</button></a>
             </div>
           </li>
         ))}

@@ -11,7 +11,7 @@
   }
   
   
-  h1 {
+  .ro{
     font-size: 3em;
     font-weight: bold;
     color: #f39224;
@@ -21,12 +21,12 @@
   }
   
   
-  .book-list {
+  .ro-book-list {
     list-style-type: none;
     padding-top: 20px;
   }
   
-  .book-item {
+  .ro-book-item {
     display: flex;
     align-items: flex-start; 
     margin-bottom: 20px;
@@ -38,15 +38,16 @@
     
   }
   
-  .book-cover {
+  .ro-book-cover {
     width: 300px;
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 20px;
+    margin-left: 20px;
   }
   
-  .book-details {
+  .ro-book-details {
     flex: 1; 
     display: flex;
     flex-direction: column;
@@ -55,34 +56,34 @@
     text-align: left;
   }
   
-  .book-details h2 {
+  .ro-book-details h2 {
     margin-left: 0; 
     font-size: 1.8em; 
     color: white;
     white-space: nowrap;
   }
   
-  .book-details p {
+  .ro-book-details p {
     margin: 5px 0;
     font-size: 1.2em; 
     color: white;
   }
   
-  .book-details .author {
+  .ro-book-details .author {
     margin-top: 10px; 
   }
-  .book-details p.teaser {
-    font-size: 0.85em; 
+  .ro-book-details p.ro-teaser {
+    font-size: 1em; 
     width: 100%; 
     max-width: 1000px; 
     margin: 10px 0; 
     color: bisque;
   }
-  .download-button {
+  .ro-download-button {
     margin-top: 10px; 
   }
   
-  .download-button button {
+  .ro-download-button button {
     background-color: #ee8732; 
     border: none; 
     color: white; 
@@ -97,15 +98,15 @@
     transition: background-color 0.3s, transform 0.2s; 
   }
   
-  .download-button button:hover {
+  .ro-download-button button:hover {
     background-color: #a35e02; 
     transform: scale(1.05); /* Slight zoom effect on hover */
   }
   
-  .download-button button:active {
+  .ro-download-button button:active {
     background-color: #d67a10; 
   }
-  .book-details .blurb-label {
+  .ro-book-details .blurb-label {
     color: white ;
     font-weight: bold; 
   }

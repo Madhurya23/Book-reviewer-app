@@ -47,18 +47,18 @@ const books = [
 const SciFi = () => {
   return (
     <div className="scifi-page">
-      <h1>SCIENCE FICTION --- Top Five Books</h1>
+      <h1 className='sf'>SCIENCE FICTION --- Top Five Books</h1>
       
-      <ul className="book-list">
+      <ul className="sf-book-list">
         {books.map((book, index) => (
-          <li key={index} className="book-item">
-            <img src={book.cover} alt={book.title} className="book-cover"/>
-            <div className="book-details">
+          <li key={index} className="sf-book-item">
+            <img src={book.cover} alt={book.title} className="sf-book-cover"/>
+            <div className="sf-book-details">
               <h2>Title: {book.title}</h2>
               <p>Author: {book.author}</p>
-              <p className='teaser'><span className="blurb-label">Blurb: </span> {book.teaser}</p>
+              <p className='sf-teaser'><span className="sf-blurb-label">Blurb: </span> {book.teaser}</p>
               <p>Rating: {book.rating}</p>
-              <a href={book.downloadLink} className="download-button"><button>Download</button></a>
+              <a href={book.downloadLink} className="sf-download-button"><button>Download</button></a>
             </div>
           </li>
         ))}

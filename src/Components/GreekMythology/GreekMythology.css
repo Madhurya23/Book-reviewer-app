@@ -9,7 +9,7 @@
     background-attachment: fixed;
   }
   
-  h1 {
+  .gm {
     font-size: 3em;
     font-weight: bold;
     color: #f8f3ed;
@@ -18,12 +18,12 @@
     margin-bottom: 30px;
   }
   
-  .book-list {
+  .gm-book-list {
     list-style-type: none;
     padding-top: 20px;
   }
   
-  .book-item {
+  .gm-book-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
@@ -35,7 +35,7 @@
     width: 100%;
   }
   
-  .book-cover {
+  .gm-book-cover {
     width: 300px;
     height: 440px;
     object-fit: cover;
@@ -44,7 +44,7 @@
     margin-left: 30px;
   }
   
-  .book-details {
+  .gm-book-details {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -54,24 +54,24 @@
     width: 100%;
   }
   
-  .book-details h2 {
+  .gm-book-details h2 {
     margin-left: 0;
     font-size: 1.8em;
     color: white;
     white-space: nowrap;
   }
   
-  .book-details p {
+  .gm-book-details p {
     margin: 5px 0;
     font-size: 1.2em;
     color: white;
   }
   
-  .book-details .author {
+  .gm-book-details .author {
     margin-top: 10px;
   }
   
-  .book-details p.teaser {
+  .gm-book-details p.gm-teaser {
     font-size: 1em;
     width: 100%;
     max-width: 1200px;
@@ -79,11 +79,11 @@
     color: bisque;
   }
   
-  .download-button {
+  .gm-download-button {
     margin-top: 10px;
   }
   
-  .download-button button {
+  .gm-download-button button {
     background-color: #4144f8;
     border: none;
     color: white;
@@ -98,16 +98,16 @@
     transition: background-color 0.3s, transform 0.2s;
   }
   
-  .download-button button:hover {
+  .gm-download-button button:hover {
     background-color: #081480;
     transform: scale(1.05);
   }
   
-  .download-button button:active {
+  .gm-download-button button:active {
     background-color: #12098d;
   }
   
-  .book-details .blurb-label {
+  .gm-book-details .blurb-label {
     color: white;
     font-weight: bold;
   }

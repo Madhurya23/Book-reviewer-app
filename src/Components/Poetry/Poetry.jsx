@@ -47,18 +47,18 @@ const books = [
 const Poetry = () => {
   return (
     <div className="poetry-page">
-      <h1>POETRY --- Top Five Books</h1>
+      <h1 className='p'>POETRY --- Top Five Books</h1>
       
-      <ul className="book-list">
+      <ul className="p-book-list">
         {books.map((book, index) => (
-          <li key={index} className="book-item">
-            <img src={book.cover} alt={book.title} className="book-cover"/>
-            <div className="book-details">
+          <li key={index} className="p-book-item">
+            <img src={book.cover} alt={book.title} className="p-book-cover"/>
+            <div className="p-book-details">
               <h2>Title: {book.title}</h2>
               <p>Author: {book.author}</p>
-              <p className='teaser'><span className="blurb-label">Blurb: </span> {book.teaser}</p>
+              <p className='p-teaser'><span className="p-blurb-label">Blurb: </span> {book.teaser}</p>
               <p>Rating: {book.rating}</p>
-              <a href={book.downloadLink} className="download-button"><button>Download</button></a>
+              <a href={book.downloadLink} className="p-download-button"><button>Download</button></a>
             </div>
           </li>
         ))}

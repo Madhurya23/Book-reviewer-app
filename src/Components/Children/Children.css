@@ -2,28 +2,28 @@
     padding: 60px;
     padding-top: 80px;
     margin-top: 0px;
-    background-image: url('/public/child.avif'); /* Use a background suitable for children */
+    background-image: url('/public/child.avif'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
   
-  h1 {
+  .cp {
     font-size: 3em;
     font-weight: bold;
-    color: whitesmoke; /* A vibrant, playful color */
+    color: rgb(250, 244, 241);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Comic Sans MS", cursive, sans-serif; /* A fun, child-friendly font */
+    font-family: "Comic Sans MS", cursive, sans-serif; 
     margin-bottom: 30px;
   }
   
-  .book-list {
+  .cp-book-list {
     list-style-type: none;
     padding-top: 20px;
   }
   
-  .book-item {
+  .cp-book-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
@@ -34,15 +34,16 @@
     overflow: hidden;
   }
   
-  .book-cover {
+  .cp-book-cover {
     width: 300px;
     height: 440px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 20px;
+    margin-left: 20px;
   }
   
-  .book-details {
+  .cp-book-details {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -51,39 +52,39 @@
     text-align: left;
   }
   
-  .book-details h2 {
+  .cp-book-details h2 {
     margin-left: 0;
     font-size: 1.8em;
     color: #333;
     white-space: nowrap;
   }
   
-  .book-details p {
+  .cp-book-details p {
     margin: 5px 0;
     font-size: 1.2em;
     color: #0c0b0b;
   }
   
-  .book-details .author {
+  .cp-book-details .author {
     margin-top: 10px;
     font-weight: 600;
   }
   
-  .book-details p.teaser {
+  .cp-book-details p.cp-teaser {
     font-size: 1em;
     width: 100%;
     font-weight: 600;
     max-width: 1000px;
     margin: 10px 0;
-    color: #020202;
+    color: #252524;
   }
   
-  .download-button {
+  .cp-download-button {
     margin-top: 10px;
   }
   
-  .download-button button {
-    background-color: #ff8c42; /* A bright, inviting color */
+  .cp-download-button button {
+    background-color: #ff8c42;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -97,16 +98,16 @@
     transition: background-color 0.3s, transform 0.2s;
   }
   
-  .download-button button:hover {
-    background-color: #ff7043; /* A slightly darker shade */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+  .cp-download-button button:hover {
+    background-color: #ff7043; 
+    transform: scale(1.05); 
   }
   
-  .download-button button:active {
-    background-color: #ff5722; /* A deeper shade on click */
+  .cp-download-button button:active {
+    background-color: #ff5722; 
   }
   
-  .book-details .blurb-label {
+  .cp-book-details .blurb-label {
     color: #0c0b0b;
     font-weight: bold;
   }

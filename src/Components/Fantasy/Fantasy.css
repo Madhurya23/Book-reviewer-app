@@ -3,14 +3,14 @@
     padding: 60px;
     padding-top: 80px;
     margin-top: 0px;
-    background-image: url('/public/fann.jpg'); /* Replace with your fantasy background image */
+    background-image: url('/public/fann.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
   
-  h1 {
+  .fan {
     font-size: 3em;
     font-weight: bold;
     color: #f8f3ed;
@@ -19,12 +19,12 @@
     margin-bottom: 30px;
   }
   
-  .book-list {
+  .fan-book-list {
     list-style-type: none;
     padding-top: 20px;
   }
   
-  .book-item {
+  .fan-book-item {
     display: flex;
     align-items: flex-start; 
     margin-bottom: 20px;
@@ -36,15 +36,16 @@
     width: 100%;
   }
   
-  .book-cover {
+  .fan-book-cover {
     width: 300px;
     height: 430px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 20px;
+    margin-left: 20px;
   }
   
-  .book-details {
+  .fan-book-details {
     flex: 1; 
     display: flex;
     flex-direction: column;
@@ -55,7 +56,7 @@
     width: 100%;
   }
   
-  .book-details h2 {
+  .fan-book-details h2 {
     width: fit-content;
     margin-left: 0; 
     font-size: 1.8em; 
@@ -63,32 +64,32 @@
     white-space: nowrap;
   }
   
-  .book-details p {
-    align-items: center;
+  .fan-book-details p {
+    align-items: left;
     margin: 5px 0;
     font-size: 1.2em; 
     color: white;
   }
   
-  .book-details .author {
+  .fan-book-details .author {
     margin-top: 10px; 
   }
   
-  .book-details p.teaser {
+  .fan-book-details p.fan-teaser {
 
-    font-size: 0.85em;
+    font-size: 1em;
     width: 100%;
     max-width: 1200px;
-    margin: 10px 20px;
     color: bisque;
+    text-align: left;
   }
   
-  .download-button {
+  .fan-download-button {
     margin-top: 10px;
     color: #470646;
   }
   
-  .download-button button {
+  .fan-download-button button {
     background-color: #470646;
     border: none; 
     color: white; 
@@ -103,16 +104,16 @@
     transition: background-color 0.3s, transform 0.2s; 
   }
   
-  .download-button button:hover {
+  .fan-download-button button:hover {
     background-color: #42044e; 
     transform: scale(1.05); 
   }
   
-  .download-button button:active {
+  .fan-download-button button:active {
     background-color: #42063a; 
   }
   
-  .book-details .blurb-label {
+  .fan-book-details .blurb-label {
     font-size: 1.2em;
     color: white;
     font-weight: bold;

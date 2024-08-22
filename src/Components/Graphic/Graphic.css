@@ -9,21 +9,21 @@
     background-attachment: fixed;
   }
   
-  h1 {
+ .gn {
     font-size: 3em;
     font-weight: bold;
-    color: #3c91e6; /* A more subdued color for nonfiction */
+    color: #fbfcfd; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Merriweather", serif; /* A different font to distinguish the genre */
+    font-family: "Merriweather", serif; 
     margin-bottom: 30px;
   }
   
-  .book-list {
+  .gn-book-list {
     list-style-type: none;
     padding-top: 20px;
   }
   
-  .book-item {
+  .gn-book-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
@@ -34,15 +34,16 @@
     overflow: hidden;
   }
   
-  .book-cover {
+  .gn-book-cover {
     width: 300px;
     height: 460px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 20px;
+    margin-left: 20px;
   }
   
-  .book-details {
+  .gn-book-details {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -51,37 +52,37 @@
     text-align: left;
   }
   
-  .book-details h2 {
+  .gn-book-details h2 {
     margin-left: 0;
     font-size: 1.8em;
     color: white;
     white-space: nowrap;
   }
   
-  .book-details p {
+  .gn-book-details p {
     margin: 5px 0;
     font-size: 1.2em;
     color: white;
   }
   
-  .book-details .author {
+  .gn-book-details .author {
     margin-top: 10px;
   }
   
-  .book-details p.teaser {
+  .gn-book-details p.gn-teaser {
     font-size: 1em;
     width: 100%;
     max-width: 1000px;
     margin: 10px 0;
-    color: #f0e68c; /* Khaki color for teaser text */
+    color: #f0e68c; 
   }
   
-  .download-button {
+  .gn-download-button {
     margin-top: 10px;
   }
   
-  .download-button button {
-    background-color: #3c91e6; /* Matches the header color */
+  .gn-download-button button {
+    background-color: #eb6cf0; 
     border: none;
     color: white;
     padding: 10px 20px;
@@ -95,16 +96,16 @@
     transition: background-color 0.3s, transform 0.2s;
   }
   
-  .download-button button:hover {
-    background-color: #1f77b4; /* Slightly darker shade */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+  .gn-download-button button:hover {
+    background-color: #9e1a97; 
+    transform: scale(1.05); 
   }
   
-  .download-button button:active {
-    background-color: #357ab6; /* Active button color */
+  .gn-download-button button:active {
+    background-color: #9c2796; 
   }
   
-  .book-details .blurb-label {
+  .gn-book-details .blurb-label {
     color: white;
     font-weight: bold;
   }

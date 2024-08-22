@@ -47,18 +47,18 @@ const books = [
 const Mystery = () => {
   return (
     <div className="mystery-page">
-      <h1>MYSTERY --- Top Five Books</h1>
+      <h1 className='m'>MYSTERY --- Top Five Books</h1>
       
-      <ul className="book-list">
+      <ul className="m-book-list">
         {books.map((book, index) => (
-          <li key={index} className="book-item">
-            <img src={book.cover} alt={book.title} className="book-cover"/>
-            <div className="book-details">
+          <li key={index} className="m-book-item">
+            <img src={book.cover} alt={book.title} className="m-book-cover"/>
+            <div className="m-book-details">
               <h2>Title: {book.title}</h2>
               <p>Author: {book.author}</p>
-              <p className='teaser'><span className="blurb-label">Blurb: </span> {book.teaser}</p>
+              <p className='m-teaser'><span className="m-blurb-label">Blurb: </span> {book.teaser}</p>
               <p>Rating: {book.rating}</p>
-              <a href={book.downloadLink} className="download-button"><button>Download</button></a>
+              <a href={book.downloadLink} className="m-download-button"><button>Download</button></a>
             </div>
           </li>
         ))}
