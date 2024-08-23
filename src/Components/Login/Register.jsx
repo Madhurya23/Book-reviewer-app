@@ -36,6 +36,9 @@ function Register() {
 
   return (
     <div className='reg-page'>
+     <div class="app-name-container">
+                <span class="app-name">Fae Follio</span>
+                </div>
     <div className='login-container'>
       <h2>Registration Page</h2>
       <form onSubmit={handleSubmit}>

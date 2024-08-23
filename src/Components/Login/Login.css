@@ -6,7 +6,7 @@
     height: 100vh;
     margin: 0;
     
-    background-image: url('/public/p1.jpg'); 
+    background-image: url('/public/libbb.jpg'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,13 +19,30 @@
     height: 100vh;
     margin: 0;
     
-    background-image: url('/public/p1.jpg'); 
+    background-image: url('/public/libbb.jpg'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Playfair Display', serif;
 }
-
+.app-name-container {
+    position: absolute;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0; 
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .app-name {
+    font-size: 24px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    color: #225654;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); 
+  }
 .login-container {
     background-color: rgba(201, 161, 109, 0.9); 
     padding: 40px;

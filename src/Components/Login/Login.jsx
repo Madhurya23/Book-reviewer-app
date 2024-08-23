@@ -32,7 +32,9 @@ function Login() {
 
     return (
     <div className="login-page">
-    
+      <div class="app-name-container">
+                <span class="app-name">Fae Follio</span>
+                </div>
 
         <div className='login-container'>
             <h2>Login Page</h2>
