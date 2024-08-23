@@ -1,74 +1,75 @@
+
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { signInWithEmail, signInWithGoogle } from '../../firebaseConfig';
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
 import './Login.css';
 
 function Login() {
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
     const [errorMsg, setErrorMsg] = useState('');
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // To track login status
-    const navigate = useNavigate(); // To programmatically navigate to another route
+    const navigate = useNavigate();
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        const storedPwd = localStorage.getItem(username);
-
-        if (!(storedPwd)) {
-            setErrorMsg("User not found");
-            return;
+        try {
+            await signInWithEmail(email, password);
+            sessionStorage.setItem('isLoggedIn', 'true'); 
+            navigate('/genres'); 
+        } catch (error) {
+            setErrorMsg("Invalid email or password");
         }
-        if (storedPwd !== password) {
-            setErrorMsg("Wrong password");
-            return;
-        }
-
-        setErrorMsg('');
-        setIsLoggedIn(true); // Set login status to true on successful login
     };
 
-    const goToGenrePage = () => {
-        navigate('/genres'); // Navigate to the genre page
+    const handleGoogleSignIn = async () => {
+        try {
+            await signInWithGoogle();
+            sessionStorage.setItem('isLoggedIn', 'true'); 
+            navigate('/genres'); 
+        } catch (error) {
+            setErrorMsg("Google sign-in failed");
+        }
     };
 
     return (
-    <div className="login-page">
-    
-
+        <div className='login-page'>
         <div className='login-container'>
             <h2>Login Page</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Username:</label>
-                    <input
-                        type="text"
-                        placeholder="Enter username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
+                    <label>Email:</label>
+                    <input 
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                 </div>
-                <div>
+                <div className="password-container">
                     <label>Password:</label>
-                    <input
-                        type="password"
-                        placeholder="Enter password"
+                    <input 
+                        type={showPassword ? "text" : "password"} 
+                        placeholder="Enter your password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
                     />
+                    <span 
+                        className="password-toggle-icon"
+                        onClick={() => setShowPassword(!showPassword)}
+                    >
+                        {showPassword ? <FaEyeSlash /> : <FaEye />}
+                    </span>
                 </div>
                 <button type="submit">Login</button>
+                <button type="button" onClick={handleGoogleSignIn}>Login with Google</button>
             </form>
             {errorMsg && <p className="error-message">{errorMsg}</p>}
-
             <h3>Not a member? <Link to="/register">Register</Link></h3>
-
-            {/* Only show this button after a successful login */}
-            {isLoggedIn && (
-                <button onClick={goToGenrePage} className="genre-page-button">
-                    Go to Genre Page
-                </button>
-            )}
+            <h4><Link to="/password-reset">Forgot Password?</Link></h4>
         </div>
         </div>
     );

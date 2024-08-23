@@ -15,7 +15,7 @@ function HomePage() {
             <nav className="navbar">
                 <ul className="navbar-list">
                     <li className="navbar-item" onClick={() => navigate('/')}>Home</li>
-                    <li className="navbar-item" onClick={() => navigate('/genre')}>Genre</li>
+                    <li className="navbar-item" onClick={() => navigate('/genres')}>Genre</li>
                     <li className="navbar-item" onClick={() => navigate('/about')}>About Us</li>
                     <li className="navbar-item" onClick={() => navigate('/contact')}>Contact</li>
                 </ul>
