@@ -1,42 +1,4 @@
 
-
-/*ody {
-    display: flex;
-    
-    height: 100vh;
-    background-image: url('/public/p1.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.login-container{
-   
-    text-align: center;
-    margin: 50px auto;
-    max-width: 100%;
-}
-input{
-    display: block;
-    margin: 10px auto;
-    padding: 8px;
-    width: 100%;
-    box-sizing: border-box;
-}
-button{
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: #0056b3;
-}
-label{
-    display: block;
-    margin: 10px 0 5px;
-}*/
 .login-page  {
     display: flex;
     justify-content: center;
@@ -67,7 +29,7 @@ label{
 .login-container {
     background-color: rgba(201, 161, 109, 0.9); 
     padding: 40px;
-    margin-left: 500px;
+    margin-left: 50px;
     margin-top: 50px;
     border-radius: 15px; 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 

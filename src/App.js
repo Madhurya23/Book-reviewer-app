@@ -31,20 +31,20 @@ import Mystery from './Components/Mystery/Mystery';
 import GreekMythology from './Components/GreekMythology/GreekMythology'
 import Adventure from './Components/Adventure/Adventure';
 import SciFi from './Components/SciFi/SciFi';
-
 import HistoricalFiction from './Components/Historical/HistoricalFiction';
 import Poetry from './Components/Poetry/Poetry';
-
 import Children from './Components/Children/Children';
 import NonFiction from './Components/NonFiction/NonFiction';
 import GraphicNovels from './Components/Graphic/Graphic';
+
+import HomePage from './Components/Home/Home';
 
 function App() {
   return (
     <Router>
       <div className='App'>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/romance" element={<Romance />} />
           <Route path="/horror" element={<Horror/>}/>
@@ -61,7 +61,7 @@ function App() {
           <Route path="/children-books-" element={<Children/>}/>
           <Route path="/non-fiction" element={<NonFiction/>}/>
           <Route path="/graphic-novels" element={<GraphicNovels/>}/>
-
+          <Route path="/" element={<HomePage/>}/>
         </Routes>
       </div>
     </Router>
