@@ -1,67 +1,102 @@
+.register-page {
+  background-image: url('/public/p6.jfif'); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .register-container {
-    background-color: rgba(201, 161, 109, 0.9); 
-    padding: 40px;
-    margin-left: 100px;
-    margin-right: 250px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    border-radius: 15px; 
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
-    width: 100%;
-    max-width: 400px; 
-    text-align: center;
-  }
-  .register-page{
-    background-image: url('/public/p1.jpg'); 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
-    margin: 0;
-  }
-  .register-box {
-    
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-  }
+  background-color: rgba(247, 213, 168, 0.5); 
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px; 
+  text-align: center;
+  margin-left: 30px;
+ 
+}
+
+.register-box {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  background-color: #fff; 
   
-  .register-box h2 {
-    margin-bottom: 20px;
-  }
-  
-  .register-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .register-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .register-box button:hover {
-    background-color: #0056b3;
-  }
-  
-  .register-box p {
-    margin-top: 10px;
-  }
-  
-  .register-box .error {
-    color: red;
-    margin-top: 10px;
-  }
+}
+
+.register-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.register-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.register-box input:focus {
+  border-color: #007bff; 
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.register-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.register-box button:hover {
+  background-color: #0056b3; 
+}
+
+.register-box p {
+  margin-top: 10px;
+}
+
+.register-box .error {
+  color: red;
+  margin-top: 10px;
+}
+
+
+label {
+  display: bl
+}
+#user{
+  text-align: left;
+  font-weight: 500;
+}
+#eml{
+  text-align: left;
+  font-weight: 500;
+}
+#pd{
+  text-align: left;
+  font-weight: 500;
+}
+.logbtn a {
+  text-decoration: none;
+  color: white;
+}

@@ -27,6 +27,7 @@ import PrivateRoute from './Components/PrivateRoute'; // Import PrivateRoute
 
 function App() {
     return (
+        
         <Router>
             <div className='App'>
                 <Routes>
@@ -59,6 +60,7 @@ function App() {
                 </Routes>
             </div>
         </Router>
+        
     );
 }
 

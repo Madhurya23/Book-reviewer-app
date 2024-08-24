@@ -34,12 +34,17 @@ function Login() {
     };
 
     return (
-        <div className='login-page'>
+        
+    <div className="login-page">
+      <div class="app-name-container">
+                <span class="app-name">Fae Follio</span>
+                </div>
+
         <div className='login-container'>
-            <h2>Login Page</h2>
+            <h2>Login</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Email:</label>
+                    <div id='em'><label>Enter Your Email ID:</label></div>
                     <input 
                         type="email"
                         placeholder="Enter your email"
@@ -49,7 +54,7 @@ function Login() {
                     />
                 </div>
                 <div className="password-container">
-                    <label>Password:</label>
+                    <div id='pwd'><label>Enter Your Password:</label></div>
                     <input 
                         type={showPassword ? "text" : "password"} 
                         placeholder="Enter your password"
@@ -68,10 +73,11 @@ function Login() {
                 <button type="button" onClick={handleGoogleSignIn}>Login with Google</button>
             </form>
             {errorMsg && <p className="error-message">{errorMsg}</p>}
-            <h3>Not a member? <Link to="/register">Register</Link></h3>
-            <h4><Link to="/password-reset">Forgot Password?</Link></h4>
+            <h3>Not a member? <Link to="/register" id='reg'>Register</Link></h3>
+            <h4><Link to="/password-reset" id='pw'>Forgot Password?</Link></h4>
         </div>
         </div>
+        
     );
 }
 

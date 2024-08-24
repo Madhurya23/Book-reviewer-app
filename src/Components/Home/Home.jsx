@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './Home.css';  
 import { useNavigate } from 'react-router-dom';
@@ -12,8 +11,13 @@ function HomePage() {
 
     return (
         <div className="home-container">
+             <div class="app-name-container">
+                <span class="app-name">Fae Follio</span>
+                </div>
             <nav className="navbar">
+                
                 <ul className="navbar-list">
+               
                     <li className="navbar-item" onClick={() => navigate('/')}>Home</li>
                     <li className="navbar-item" onClick={() => navigate('/genres')}>Genre</li>
                     <li className="navbar-item" onClick={() => navigate('/about')}>About Us</li>
@@ -32,7 +36,6 @@ function HomePage() {
                 <div className="home-content">
                     <div className="logo-container">
                         <img src="/p5.jfif" alt="App Logo" className="app-logo" />
-                        <h1 className="app-name">Fae Follio</h1>
                     </div>
                     <p className="tagline">~Bookish Delights for fae at heart :)</p>
                     <button className="explore-button" onClick={handleExploreClick}>
@@ -53,4 +56,3 @@ function HomePage() {
 }
 
 export default HomePage;
-

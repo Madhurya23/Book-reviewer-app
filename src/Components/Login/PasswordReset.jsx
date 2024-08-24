@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { sendPasswordReset } from '../../firebaseConfig';
-
+import './PasswordReset.css';
 function PasswordReset() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -16,11 +16,12 @@ function PasswordReset() {
     };
 
     return (
-        <div className='login-container'>
-            <h2>Reset Password</h2>
+        <div className='pwd-page'>
+        <div className='pwd-container'>
+            <div className='boxpwd'><h2>Reset Password</h2>
             <form onSubmit={handleReset}>
                 <div>
-                    <label>Email:</label>
+                    <div id='mail'><label>Enter Your Email ID:</label></div>
                     <input 
                         type="email"
                         placeholder="enter email"
@@ -32,6 +33,8 @@ function PasswordReset() {
                 <button type="submit">Send Reset Email</button>
             </form>
             {message && <p className="message">{message}</p>}
+        </div>
+        </div>
         </div>
     );
 }

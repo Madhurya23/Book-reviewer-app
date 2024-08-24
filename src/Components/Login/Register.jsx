@@ -1,6 +1,5 @@
-
-
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import { registerWithEmailAndPassword } from '../../firebaseConfig';
 import './Register.css';
 function Register() {
@@ -28,10 +27,10 @@ function Register() {
     return (
       <div className='register-page'>
         <div className='register-container'>
-            <h2>Registration Page</h2>
+            <h2>Register</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Username:</label>
+                    <div id='user'><label>Set Username:</label></div>
                     <input 
                         type="text"
                         placeholder="enter username"
@@ -41,7 +40,7 @@ function Register() {
                     />
                 </div>
                 <div>
-                    <label>Email:</label>
+                    <div id='eml'><label>Enter Your Email ID:</label></div>
                     <input 
                         type="email"
                         placeholder="enter email id"
@@ -51,8 +50,8 @@ function Register() {
                     />
                 </div>
                 <div>
-                    <label>Password:</label>
-                    <input 
+                    <div id='pd'><label>Set Your Password:</label></div>
+                    <input
                         type="password"
                         placeholder="enter password"
                         value={password}
@@ -61,6 +60,7 @@ function Register() {
                     />
                 </div>
                 <button type="submit">Register</button>
+                <button type="button" className='logbtn'><Link to='/login'>Go to Login Page</Link></button>
             </form>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             {successMessage && <p className="success-message">{successMessage}</p>}
