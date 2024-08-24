@@ -50,7 +50,7 @@ function App() {
                     <Route path="/sci-fi" element={<SciFi />} />
                     <Route path="/historical-fiction" element={<HistoricalFiction />} />
                     <Route path="/poetry" element={<Poetry />} />
-                    <Route path="/children-books" element={<Children />} />
+                    <Route path="/children-books-" element={<Children />} />
                     <Route path="/non-fiction" element={<NonFiction />} />
                     <Route path="/graphic-novels" element={<GraphicNovels />} />
                     
