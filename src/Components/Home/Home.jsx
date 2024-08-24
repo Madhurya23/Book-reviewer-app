@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';  
+import './Home.css';
 import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
@@ -11,19 +11,22 @@ function HomePage() {
 
     return (
         <div className="home-container">
-             <div class="app-name-container">
-                <span class="app-name">Fae Follio</span>
-                </div>
+            {/* App Name */}
+            
+            <div className="app-name-container">
+                <span className="app-name">Fae Follio</span>
+           
+            </div>
+            {/* Navbar */}
             <nav className="navbar">
-                
                 <ul className="navbar-list">
-               
                     <li className="navbar-item" onClick={() => navigate('/')}>Home</li>
                     <li className="navbar-item" onClick={() => navigate('/genres')}>Genre</li>
                     <li className="navbar-item" onClick={() => navigate('/about')}>About Us</li>
                     <li className="navbar-item" onClick={() => navigate('/contact')}>Contact</li>
                 </ul>
             </nav>
+            {/* Main Content */}
             <div className="content-wrapper">
                 <div className="slideshow-box">
                     <h3>Authors' Sayings</h3>

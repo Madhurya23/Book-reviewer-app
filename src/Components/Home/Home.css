@@ -1,4 +1,3 @@
-
 .home-container {
     display: flex;
     flex-direction: column;
@@ -14,7 +13,7 @@ body {
 }
 
 .navbar {
-  
+    
     width: 100%;
     height: 60px;
     background-color: #078079;
@@ -26,6 +25,7 @@ body {
 }
 
 .navbar-list {
+    
     list-style: none;
     display: flex;
     margin: 0;
@@ -92,7 +92,6 @@ body {
     object-fit: cover; 
     border: 2px solid #fff; 
   }
-
   .app-name-container {
     position: absolute;
     height: 40px;
@@ -170,5 +169,3 @@ body {
 .slideshow-image:nth-child(3) {
     animation-delay: 8s;
 }
-
-

@@ -24,6 +24,7 @@ import Children from './Components/Children/Children';
 import NonFiction from './Components/NonFiction/NonFiction';
 import GraphicNovels from './Components/Graphic/Graphic';
 import PrivateRoute from './Components/PrivateRoute'; // Import PrivateRoute
+import AboutUs from './Components/AboutUs/AboutUs';
 
 function App() {
     return (
@@ -33,7 +34,7 @@ function App() {
                 <Routes>
                     {/* Default Route */}
                     <Route path="/" element={<Home />} />
-
+                    <Route path="/about" element={<AboutUs/>}/>
                     {/* Auth Routes */}
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
@@ -52,10 +53,12 @@ function App() {
                     <Route path="/children-books" element={<Children />} />
                     <Route path="/non-fiction" element={<NonFiction />} />
                     <Route path="/graphic-novels" element={<GraphicNovels />} />
+                    
 
                     {/* Protected Routes */}
                     <Route element={<PrivateRoute />}>
                         <Route path="/genres" element={<GenrePage />} />
+                        
                     </Route>
                 </Routes>
             </div>
