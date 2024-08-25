@@ -2,7 +2,7 @@
     padding: 60px;
     padding-top: 80px;
     margin-top: 0px;
-    background-image: url('/public/sci.jpg'); /* Update with your background image */
+    background-image: url('/public/sci.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,10 +12,11 @@
   .sf {
     font-size: 3em;
     font-weight: bold;
-    color: #00aaff; /* Sci-Fi themed color */
+    color: #00aaff; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Abril Fatface", serif;
     margin-bottom: 30px;
+    margin-top: 2px;
   }
   
   .sf-book-list {
@@ -41,6 +42,10 @@
     border-radius: 4px;
     margin-right: 20px;
     margin-left: 20px;
+    transition: transform 0.3s ease;
+  }
+  .sf-book-cover:hover{
+    transform: scale(1.1);
   }
   
   .sf-book-details {

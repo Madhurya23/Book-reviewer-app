@@ -16,6 +16,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Abril Fatface", serif;
     margin-bottom: 30px;
+    margin-top: 2px;
   }
   
   .p-book-list {
@@ -41,6 +42,10 @@
     border-radius: 4px;
     margin-right: 20px;
     margin-left: 20px;
+    transition: transform 0.3s ease;
+  }
+  .p-book-cover:hover{
+    transform: scale(1.1);
   }
   
   .p-book-details {

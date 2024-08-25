@@ -16,12 +16,15 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Abril Fatface", serif;
     margin-bottom: 30px;
+    margin-top: 2px;
   }
   
   .adv-book-list {
     list-style-type: none;
     padding-top: 20px;
+    
   }
+  
   
   .adv-book-item {
     display: flex;
@@ -33,7 +36,9 @@
     padding: 50px 0px 50px 0px;
     overflow: hidden;
     width: 100%;
+    
   }
+  
   
   .adv-book-cover {
     width: 300px;
@@ -42,6 +47,10 @@
     border-radius: 4px;
     margin-right: 20px;
     margin-left: 30px;
+    transition: transform 0.3s ease;
+  }
+  .adv-book-cover:hover{
+    transform: scale(1.1);
   }
   
   .adv-book-details {

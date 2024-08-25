@@ -10,7 +10,7 @@
     align-items: center;
     height: fit-content;
     margin: 0;
-    padding-top: 50px; 
+    padding-top: 30px; 
 }
 
 .genre-container {
@@ -38,6 +38,10 @@
     object-fit: cover;
     border-radius: 5px;
     border: 1px solid #000;
+    transition: transform 0.3s ease-in-out;
+}
+.genre-image:hover{
+    transform: scale(1.1); 
 }
 
 .genre-name {
@@ -45,4 +49,20 @@
     color: rgb(15, 16, 16);
     margin-top: 8px;
     font-size: 16px; 
+}
+.gen{
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #202222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    transition: color 0.1s ease;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+.gen:hover{
+    color: #422964;
+    transform: scale(1.1); 
 }

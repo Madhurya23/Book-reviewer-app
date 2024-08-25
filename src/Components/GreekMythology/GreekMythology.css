@@ -16,6 +16,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Abril Fatface", serif;
     margin-bottom: 30px;
+    margin-top: 2px;
   }
   
   .gm-book-list {
@@ -42,8 +43,11 @@
     border-radius: 4px;
     margin-right: 20px;
     margin-left: 30px;
+    transition: transform 0.3s ease;
   }
-  
+  .gm-book-cover:hover{
+    transform: scale(1.1);
+  }
   .gm-book-details {
     flex: 1;
     display: flex;

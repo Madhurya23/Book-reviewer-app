@@ -27,6 +27,7 @@ function GenrePage() {
 
     return (
         <div className="genre-page">
+        <h2 className='gen'>GENRES</h2>
             {containers.map((container, index) => (
                 <div className="genre-container" key={index}>
                     {container.map((genre) => (

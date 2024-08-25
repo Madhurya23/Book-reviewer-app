@@ -16,6 +16,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Comic Sans MS", cursive, sans-serif; 
     margin-bottom: 30px;
+    margin-top: 2px;
   }
   
   .cp-book-list {
@@ -41,8 +42,11 @@
     border-radius: 8px;
     margin-right: 20px;
     margin-left: 20px;
+    transition: transform 0.3s ease;
   }
-  
+  .cp-book-cover:hover{
+    transform: scale(1.1);
+  }
   .cp-book-details {
     flex: 1;
     display: flex;
