@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import Home from './Components/Home/Home';
+import ContactUs from './Components/ContactUs/ContactUs';
 import Login from './Components/Login/Login';
 import Register from './Components/Login/Register';
 import PasswordReset from './Components/Login/PasswordReset';
@@ -35,6 +36,7 @@ function App() {
                     {/* Default Route */}
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<AboutUs/>}/>
+                    <Route path="/contact-us" element={<ContactUs/>}/>
                     {/* Auth Routes */}
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />

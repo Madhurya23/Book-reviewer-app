@@ -70,10 +70,10 @@ function Login() {
                     </span>
                 </div>
                 <button type="submit">Login</button>
-                <button type="button" onClick={handleGoogleSignIn}>Login with Google</button>
+                <button type="button" onClick={handleGoogleSignIn}>Sign Up with Google</button>
             </form>
             {errorMsg && <p className="error-message">{errorMsg}</p>}
-            <h3>Not a member? <Link to="/register" id='reg'>Register</Link></h3>
+            <h3>Not a member? <Link to="/register" id='reg'>Register with Email</Link></h3>
             <h4><Link to="/password-reset" id='pw'>Forgot Password?</Link></h4>
         </div>
         </div>

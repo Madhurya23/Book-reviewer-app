@@ -1,0 +1,138 @@
+/* Apply the background image to the entire Contact Us page */
+.contact-us-page {
+    background: url('/public/cbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Ensure it covers the entire viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the contact form container */
+.contact-form-container {
+    max-width: 400px; /* Fixed width for a more compact container */
+    width: 100%;
+    background-color: rgba(116, 85, 56, 0.76); /* Semi-transparent background */
+    padding: 20px; /* Increased padding */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin: 20px auto;
+    border: 1px solid rgba(93, 48, 2, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+}
+
+/* Form heading styling */
+.contact-form-container h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px; /* Font size */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px; /* Margin bottom */
+}
+
+/* Styling for form group */
+.form-group {
+    width: 100%; /* Full width */
+    margin-bottom: 15px; /* Margin between form elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+}
+
+/* Styling for labels */
+.form-group label {
+    display: block;
+    margin-bottom: 6px; /* Margin below label */
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for input and textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Ensure it does not exceed container width */
+    padding: 12px; /* Padding */
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    font-size: 14px; /* Font size */
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* White background for text fields */
+    color: #333333; /* Dark text color */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    margin: 0 auto; /* Center align the input */
+}
+
+/* Fixed width for text fields to ensure they are of equal length */
+.form-group input,
+.form-group textarea {
+    max-width: 360px; /* Width considering padding and border */
+}
+
+/* Styling for the input field */
+.form-group input {
+    height: 40px; /* Height */
+}
+
+/* Styling for the textarea */
+.form-group textarea {
+    height: 80px; /* Height */
+    resize: none;
+}
+
+/* Styling for the button */
+button {
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px; /* Reduced padding for a smaller button */
+    border-radius: 12px;
+    cursor: pointer;
+    width: auto; /* Auto width for the button */
+    max-width: 100%; /* Ensure button doesn’t exceed container width */
+    font-size: 14px; /* Reduced font size */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in button’s total width */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ff4a43;
+    transform: scale(1.05);
+}
+
+/* Social media container styling */
+.social-media-container {
+    margin-top: 20px; /* Margin above social icons */
+    text-align: center;
+    width: 100%; /* Full width */
+}
+
+/* Social icons styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Gap between icons */
+}
+
+/* Individual social icon styling */
+.social-icon img {
+    width: 35px; /* Icon size */
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.social-icon img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}

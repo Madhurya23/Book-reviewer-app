@@ -23,7 +23,7 @@ function HomePage() {
                     <li className="navbar-item" onClick={() => navigate('/')}>Home</li>
                     <li className="navbar-item" onClick={() => navigate('/genres')}>Genre</li>
                     <li className="navbar-item" onClick={() => navigate('/about')}>About Us</li>
-                    <li className="navbar-item" onClick={() => navigate('/contact')}>Contact</li>
+                    <li className="navbar-item" onClick={() => navigate('/contact-us')}>Contact</li>
                 </ul>
             </nav>
             {/* Main Content */}
