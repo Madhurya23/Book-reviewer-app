@@ -1,13 +1,19 @@
-import React from 'react';
+import {React,useState} from 'react';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 function HomePage() {
     const navigate = useNavigate();
+    const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
     const handleExploreClick = () => {
         navigate('/login');  
     };
+    const toggleNavbar = () => {
+        setIsNavbarOpen(!isNavbarOpen);
+    };
+    
 
     return (
         <div className="home-container">
@@ -17,14 +23,20 @@ function HomePage() {
                 <span className="app-name">Fae Follio</span>
            
             </div>
+            
             {/* Navbar */}
             <nav className="navbar">
-                <ul className="navbar-list">
+            <div className="navbar-toggle" onClick={toggleNavbar}>
+                    {isNavbarOpen ? <FaTimes /> : <FaBars />}
+                </div>
+                <ul className={`navbar-list ${isNavbarOpen ? 'open' : ''}`}>
                     <li className="navbar-item" onClick={() => navigate('/')}>Home</li>
                     <li className="navbar-item" onClick={() => navigate('/genres')}>Genre</li>
                     <li className="navbar-item" onClick={() => navigate('/about')}>About Us</li>
                     <li className="navbar-item" onClick={() => navigate('/contact-us')}>Contact</li>
+                    
                 </ul>
+                
             </nav>
             {/* Main Content */}
             <div className="content-wrapper">
@@ -45,9 +57,9 @@ function HomePage() {
                         Unlock Your Next Favorite Book
                     </button>
                 </div>
-                <div className="slideshow-box">
+                <div className="slideshow-box2">
                     <h3>Trending Books</h3>
-                    <div className="slideshow">
+                    <div className="slideshow2">
                         <img src="/sl1.avif" alt="Book 1" className="slideshow-image" />
                         <img src="/sl2.jpg" alt="Book 2" className="slideshow-image" />
                         <img src="/sl3.jpg" alt="Book 3" className="slideshow-image" />

@@ -83,13 +83,13 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 15px; /* Adds space below each button */
+    margin-bottom: 15px; 
     margin-right: 10px ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button:last-of-type {
-    margin-bottom: 0; /* Removes bottom margin for the last button */
+    margin-bottom: 0; 
 }
 
 button:hover {
@@ -112,7 +112,7 @@ button:hover {
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 1.2em;
-    color: #666; /* Change this to your preferred color */
+    color: #666; 
 }
 #reg{
     text-decoration: none;
@@ -121,4 +121,32 @@ button:hover {
 #pw{
     text-decoration: none;
     color: #232525;
+}
+@media screen and (max-width: 400px){
+    .login-container {
+        background-color: rgba(247, 213, 168, 0.5); 
+        padding: 20px;
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        border-radius: 15px; 
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+        width: 100%;
+        max-width: 300px; 
+        text-align: center;
+        font-size: 0.8em;
+    }
+    button {
+        padding: 8px 8px;
+        background-color: #1f8386;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 10px; 
+        margin-right: 5px ;
+        font-size: 0.9em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
