@@ -187,7 +187,7 @@ body {
     transform: translateX(0);
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 390px){
    
    .navbar-list {
     background:  #078079;
@@ -239,7 +239,7 @@ body {
 }
 
 .logo-container {
-    width: 58%; 
+    width: 55%; 
     margin-top: 20px;
 }
 .app-logo {

@@ -136,3 +136,33 @@ button:hover {
     transform: scale(1.2);
     filter: brightness(1.2);
 }
+@media screen and (max-width: 400px){
+    .contact-form-container {
+        max-width: 250px; /* Fixed width for a more compact container */
+        width: 100%;
+        background-color: rgba(116, 85, 56, 0.76); /* Semi-transparent background */
+        padding: 15px; /* Increased padding */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 12px;
+        margin: 10px auto;
+        border: 1px solid rgba(93, 48, 2, 0.75);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align items */
+    }
+    .form-group input,
+.form-group textarea {
+    max-width: 300px; /* Width considering padding and border */
+}
+
+/* Styling for the input field */
+.form-group input {
+    height: 20px; /* Height */
+}
+
+/* Styling for the textarea */
+.form-group textarea {
+    height: 44px; /* Height */
+    resize: none;
+}
+}

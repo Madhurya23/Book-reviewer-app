@@ -138,3 +138,90 @@
     background-color: #928DAB;
     color: #151515;
   }
+
+  @media screen and (max-width: 400px){
+    .container {
+      max-width: 250px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      opacity: 0.9;
+      transition: opacity 0.5s ease, transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .about-us-page {
+      padding: 0px 0px; /* Removed the top padding */
+      background: linear-gradient(140deg, #1f1c2c, #928DAB);
+     height: max-content;
+      color: #f0e6d2;
+      font-family: 'Merriweather', serif;
+      min-height: 200vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background 0.5s ease;
+      max-width: fit-content;
+    }
+  
+    .section {
+      display: flex;
+      flex-direction: column; /* Stack the image on top */
+      align-items: center; /* Center the items */
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      transition: background 0.5s ease, transform 0.3s ease;
+    }
+  
+    .image-content {
+      width: 100%; /* Make image full width */
+      text-align: center;
+      margin-bottom: 10px; /* Space between image and text */
+      transition: transform 0.5s ease;
+    }
+  
+    .image-content img {
+      width: 100%; /* Ensure image takes full width of container */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.5s ease;
+    }
+  
+    .text-content {
+      width: 100%; /* Full width for the text */
+      padding: 10px;
+      transition: color 0.5s ease, text-shadow 0.5s ease;
+      text-align: center; /* Align text in the center */
+    }
+  
+    .text-content h1 {
+      font-size: 1rem;
+      color: #160000;
+      margin-bottom: 10px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    }
+  
+    .text-content p {
+      font-size: 0.8rem;
+      text-align: left;
+      margin-bottom: 10px;
+      color: #080808;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      opacity: 0.85;
+      display: flex; /* Display paragraph in a horizontal flow */
+      flex-wrap: wrap; /* Allow wrapping of text to new line if needed */
+      justify-content: flex-start; /* Align text to the start of the container */
+    }
+    .text-content .fae-follio {
+      font-weight: bold;
+      color: #210331;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+      font-style: italic;
+      display: inline; /* Ensure Fae Follio remains inline with the text */
+    }
+  }

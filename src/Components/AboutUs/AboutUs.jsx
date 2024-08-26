@@ -12,7 +12,7 @@ const AboutUs = () => {
         <section className="section">
           <div className="text-content left">
             <h1>Our Vision</h1>
-            <p>At <span className="fae-follio">Fae Follio</span>, our vision is to weave together the enchantment of storytelling with the insights of a thousand readers. We strive to be a haven where tales of wonder, mystery, and magic meet the discerning gaze of the literary connoisseur.</p>
+            <p><span className="fae-follio">At Fae Follio,</span> our vision is to weave together the enchantment of storytelling with the insights of a thousand readers. We strive to be a haven where tales of wonder, mystery, and magic meet the discerning gaze of the literary connoisseur.</p>
           </div>
           <div className="image-content right">
             <img src="/nchanted.jpg" alt="Our Vision" />

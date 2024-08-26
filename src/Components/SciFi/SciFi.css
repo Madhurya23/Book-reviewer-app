@@ -114,4 +114,98 @@
     color: white;
     font-weight: bold;
   }
-  
+  @media screen and (max-width: 400px){
+    .sf{
+      font-size: 1.8em;
+    font-weight: bold;
+    color: #00aaff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Abril Fatface", serif;
+    margin-bottom: 30px;
+    margin-top: 2px;
+    }
+    .sf-book-item {
+      display: flex;
+      align-items: flex-start; 
+      margin-bottom: 20px;
+      background: rgba(5, 5, 5, 0.5);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(8, 8, 8, 0.918);
+      padding: 20px 0px 20px 0px;
+      overflow: hidden;
+      margin-left: 2px;
+      
+    }
+    .sf-book-cover {
+      width: 150px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 4px;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+      position:sticky;
+    }
+
+    .scifi-page {
+      padding-left: 0px;
+      padding-right: 15px;
+      padding-top: 80px;
+      margin-top: 0px;
+      background-image: url('/public/sci.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .sf-book-details {
+      flex: 1; 
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      padding-top: 0px;
+      padding-left: 10px;
+      text-align: left;
+    }
+    
+    .sf-book-details h2 {
+      margin-left: 0; 
+      font-size: 0.6em; 
+      color: white;
+      white-space: nowrap;
+    }
+    
+    .sf-book-details p {
+      margin: 5px 0;
+      font-size: 0.6em; 
+      color: white;
+    }
+    
+    .sf-book-details .author {
+      margin-top: 10px; 
+    }
+    .sf-book-details p.sf-teaser {
+      font-size: 0.6em; 
+      width: 110%; 
+      max-width: 1000px; 
+      margin: 10px 0; 
+      color: bisque;
+    }
+    .sf-download-button {
+      margin-top: 10px; 
+    }
+    
+    .sf-download-button button {
+      background-color: #007acc; 
+      border: none; 
+      color: white; 
+      padding: 5px 10px; 
+      text-align: center; 
+      text-decoration: none; 
+      display: inline-block; 
+      font-size: 0.7em; 
+      margin: 4px 2px; 
+      cursor: pointer; 
+      border-radius: 4px; 
+      transition: background-color 0.3s, transform 0.2s; 
+    }
+  }
