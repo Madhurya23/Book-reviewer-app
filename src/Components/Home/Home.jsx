@@ -46,6 +46,8 @@ function HomePage() {
                         <img src="/sld1.jpg" alt="Quote 1" className="slideshow-image" />
                         <img src="/sld2.jpg" alt="Quote 2" className="slideshow-image" />
                         <img src="/sld3.jpg" alt="Quote 3" className="slideshow-image" />
+                        <img src="/sld4.jpg" alt="Quote 4" className="slideshow-image" />
+                        <img src="/sld5.jpg" alt="Quote 5" className="slideshow-image" />
                     </div>
                 </div>
                 <div className="home-content">
@@ -63,6 +65,8 @@ function HomePage() {
                         <img src="/sl1.avif" alt="Book 1" className="slideshow-image" />
                         <img src="/sl2.jpg" alt="Book 2" className="slideshow-image" />
                         <img src="/sl3.jpg" alt="Book 3" className="slideshow-image" />
+                        <img src="/sl44.jpg" alt="Book 4" className="slideshow-image" />
+                        <img src="/sl5.jfif" alt="Book 5" className="slideshow-image" />
                     </div>
                 </div>
             </div>
