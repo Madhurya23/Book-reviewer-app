@@ -149,4 +149,7 @@ button:hover {
         font-size: 0.9em;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+    button:last-of-type {
+        margin-bottom: 0; 
+    }
 }
