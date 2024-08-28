@@ -50,7 +50,7 @@ const books = [
 const Romance = () => {
   return (
     <div className="romance-page">
-      <h1 className='ro'>ROMANCE --- Top Five Books</h1>
+      <h1 className='ro'>ROMANCE: Top 5 Heartfelt Stories</h1>
       
       <ul className="ro-book-list">
         {books.map((book, index) => (

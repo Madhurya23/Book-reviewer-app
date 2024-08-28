@@ -47,7 +47,7 @@ const books = [
 const Poetry = () => {
   return (
     <div className="poetry-page">
-      <h1 className='p'>POETRY --- Top Five Books</h1>
+      <h1 className='p'>POETRY: Top 5 Verse Treasures</h1>
       
       <ul className="p-book-list">
         {books.map((book, index) => (

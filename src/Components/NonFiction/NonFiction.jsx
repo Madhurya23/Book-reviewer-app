@@ -47,7 +47,7 @@ const books = [
 const NonFiction = () => {
   return (
     <div className="nonfiction-page">
-      <h1 className='nf'>NON-FICTION --- Top Five Books</h1>
+      <h1 className='nf'>NON-FICTION: Top 5 Insightful Reads</h1>
       
       <ul className="nf-book-list">
         {books.map((book, index) => (

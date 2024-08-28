@@ -47,7 +47,8 @@ const graphicNovels = [
 const GraphicNovels = () => {
   return (
     <div className="graphic-novels-page">
-      <h1 className='gn'>GRAPHIC NOVELS --- Top Five Books</h1>
+      <h1 className='gn'>
+      GRAPHIC NOVELS: Top 5 Visual Masterpieces</h1>
       
       <ul className="gn-book-list">
         {graphicNovels.map((book, index) => (

@@ -47,7 +47,7 @@ const books = [
 const Adventure = () => {
   return (
     <div className="adventure-page">
-      <h1 className='adv'>ADVENTURE --- Top Five Books</h1>
+      <h1 className='adv'>ADVENTURE: Top 5 Epic Escapes</h1>
       
       <ul className="adv-book-list">
         {books.map((book, index) => (

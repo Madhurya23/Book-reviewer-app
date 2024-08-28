@@ -47,7 +47,7 @@ const books = [
 const Horror = () => {
   return (
     <div className="horror-page">
-      <h1 className='hor'>HORROR --- Top Five Books</h1>
+      <h1 className='hor'>HORROR: Top 5 Spine-Chilling Reads</h1>
       
       <ul className="hor-book-list">
         {books.map((book, index) => (

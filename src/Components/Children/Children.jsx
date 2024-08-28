@@ -47,7 +47,7 @@ const books = [
 const Children = () => {
   return (
     <div className="children-page">
-      <h1 className='cp'>CHILDREN'S BOOKS --- Top Five Books</h1>
+      <h1 className='cp'>CHILDREN'S BOOKS: Top 5 Magical Reads</h1>
       
       <ul className="cp-book-list">
         {books.map((book, index) => (

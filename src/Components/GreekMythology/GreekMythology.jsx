@@ -47,7 +47,7 @@ const books = [
 const GreekMythology = () => {
   return (
     <div className="greekmyth-page">
-      <h1 className='gm'>GREEK MYTHOLOGY --- Top Five Books</h1>
+      <h1 className='gm'>GREEK MYTHOLOGY: Top 5 Legendary Tales</h1>
       
       <ul className="gm-book-list">
         {books.map((book, index) => (

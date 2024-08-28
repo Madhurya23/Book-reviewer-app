@@ -47,7 +47,8 @@ const books = [
 const Fantasy = () => {
   return (
     <div className="fantasy-page">
-      <h1 className='fan'>FANTASY --- Top Five Books</h1>
+      <h1 className='fan'>
+      FANTASY: Top 5 Enchanting Realms</h1>
       
       <ul className="fan-book-list">
         {books.map((book, index) => (

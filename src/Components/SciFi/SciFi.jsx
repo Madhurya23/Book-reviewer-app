@@ -47,7 +47,7 @@ const books = [
 const SciFi = () => {
   return (
     <div className="scifi-page">
-      <h1 className='sf'>SCIENCE FICTION --- Top Five Books</h1>
+      <h1 className='sf'>SCIENCE FICTION: Top 5 Futuristic Adventures</h1>
       
       <ul className="sf-book-list">
         {books.map((book, index) => (

@@ -47,7 +47,7 @@ const books = [
 const HistoricalFiction = () => {
   return (
     <div className="historical-fiction-page">
-      <h1 className='hf'>HISTORICAL FICTION --- Top Five Books</h1>
+      <h1 className='hf'>HISTORICAL FICTION: Time-Travel Through Top 5 Tales</h1>
       
       <ul className="hf-book-list">
         {books.map((book, index) => (
