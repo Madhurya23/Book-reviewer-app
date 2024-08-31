@@ -1,24 +1,57 @@
-import React from 'react';
+
+
+import React, { useState } from 'react';
 import './ContactUs.css';
 
 function ContactUs() {
+    const [responseMessage, setResponseMessage] = useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "bcb6581f-52ec-47ae-8a6a-e5f44b2dff78");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+            setResponseMessage("Thank you! Your message has been sent successfully.");
+            event.target.reset();
+        } else {
+            setResponseMessage("Oops! Something went wrong. Please try again.");
+        }
+    };
+
     return (
         <div className="contact-us-page">
             <div className="contact-form-container">
                 <h2>Contact Us</h2>
-                <div className="form-group">
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" required />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
+                <form onSubmit={onSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                {responseMessage && <p className="response-message">{responseMessage}</p>}
                 <div className="social-media-container">
                     <h3>Follow Us:</h3>
                     <div className="social-icons">
